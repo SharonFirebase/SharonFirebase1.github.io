@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
+   <!--[if lt IE 9]>
+  <script>
+    document.createElement("header" );
+    document.createElement("footer" );
+    document.createElement("section"); 
+    document.createElement("aside"  );
+    document.createElement("nav"    );
+    document.createElement("article"); 
+    document.createElement("hgroup" ); 
+    document.createElement("time"   );
+  </script>
+  <noscript>
+     <strong>Warning !</strong>
+     Because your browser does not support HTML5, some elements are created using JavaScript.
+     Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+  </noscript>
+<![endif]-->
+<head>
+  <title>Proof of Concept | Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ </head>
+</head>     
+  <body>
+       
+       
+       <div class="row" style="margin-top:50px;">
+            <div class="container">
+                 
+                 <div class="col-md-8"><!-- intake form -->
+                      <div style="text-align:center;"><!-- header -->
+                         <header><h3>Initial Intake Form</h3></header>
+                              <h4>Please fill out the contact form in case we lose the video connection.</h4> 
+                              <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
+                      </div><!-- header -->
+                      
+                      <div><!-- form wrapper -->  
+                         <form id="contactForm" autocomplete="off">
+                            
+                            <div class="alert">Alerts Go here</div>
+                         
+                              <label for="name">Your Name:</label><br />  
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
+
+                                <div>
+                                 <label for="state">State of Residence:</label><br /> 
+                                 <input id="state" type="text" name="state"><br /> 
+                                </div><br /> 
+                              
+                              <label for="dateOfBirth">Date of Birth:</label><br /> 
+                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
+
+                              <label for="email">Email:</label><br />  
+                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+
+                              <label for="phone">Contact Phone:</label><br />  
+                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                            <div style="margin-top:25px;"><!-- submit button wrapper --> 
+                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
+                            <!-- submit button wrapper -->     
+                         </form>
+                      </div><!-- form wrapper--> 
+                         
+   
+                 </div><!-- col md 8 for initial intake form --> 
+                    
+                    
+                 <div class="col-md-4"><!-- upload -->                 
+                <!-- version one    
+                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
+                    <script>
+                         function uploadFunction() {
+                             var uploadfile = document.createElement("INPUT");
+                             uploadfile.setAttribute("type", "file");
+                             document.body.appendChild(uploadfile);
+                         }
+                    </script> 
+                     --->
+                      <!-- version 2 -->
+               <form enctype="multipart/form-data" action="" method="post">
+                   <p>Upload file(s)</p>
+                   <div id="files">
+                       <p><input type="file" name="uploaded_file[]" /></p>
+                   </div>
+                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
+               </form>
+                      
+                     
+                 </div><!-- col md-4 for uploading documents -->
+                        
+                    
+            </div><!-- container for intake form -->
+         </div><!-- row for intake form -->
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="intake-initial.js"></script>
+  </body>
+
+</html>
