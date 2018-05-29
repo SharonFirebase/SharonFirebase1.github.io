@@ -49,7 +49,8 @@
 ### About the Source Code:
 #### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
 
-
+### Brad Traversy -- Please support him on Paetron
+##### https://github.com/bradtraversy/firebasecontact
 
 ### Brian Stewart
 ##### http://bdsworks.org
@@ -61,7 +62,7 @@
 ##### Accessibility Note: opacity is used to hide the file input instead of visibility: hidden or display: none, because assistive technology interprets the latter two styles to mean the file input isn't interactive. 
 ##### https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
 
-### W3C SChools -- who really have provided me with many lessons beyond the ones I used in this project -- you ROCK!
+### W3C SChools -- these are only a few of the many, many resources I've used from you -- you ROCK!
 #### https://www.w3schools.com/default.asp
 
 ##### How To - Autocomplete
