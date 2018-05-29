@@ -1,22 +1,26 @@
 //original code credit to websitebeaver.com
 // see their code at: https://github.com/WebsiteBeaver/simple-webrtc-video-chat-using-firebase/blob/master/js/script.js
 //Create an account on Firebase, and use the credentials they give you in place of the following
+
+//TO DO NOTE THERE IS NO STORAGE BUCKET, and the project ID has a suffix of 5f6de
+//The storage bucket for the launchcode sister version is ackathon-video-chat.appspot.com
+  // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
-    authDomain: "hackathon-video-chat.firebaseapp.com",
-    databaseURL: "https://hackathon-video-chat.firebaseio.com",
-    projectId: "hackathon-video-chat",
-    storageBucket: "hackathon-video-chat.appspot.com",
-    messagingSenderId: "633008113206"
+    apiKey: "AIzaSyD3fDQFcJoftOMDzlQ43NOqb7CVPw7NIgM",
+    authDomain: "hackathon-video-chat-5f6de.firebaseapp.com",
+    databaseURL: "https://hackathon-video-chat-5f6de.firebaseio.com",
+    projectId: "hackathon-video-chat-5f6de",
+    storageBucket: "",
+    messagingSenderId: "232620784837"
   };
-firebase.initializeApp(config);
+  firebase.initializeApp(config)
 
 var database = firebase.database().ref();
 var yourVideo = document.getElementById("yourVideo");
 var friendsVideo = document.getElementById("friendsVideo");
 var yourId = Math.floor(Math.random()*1000000000);
 //Create an account on Viagenie (http://numb.viagenie.ca/), and replace {'urls': 'turn:numb.viagenie.ca','credential': 'websitebeaver','username': 'websitebeaver@email.com'} with the information from your account
-var servers = {'iceServers': [{'urls': 'stun:stun.services.mozilla.com'}, {'urls': 'stun:stun.l.google.com:19302'}, {'urls': 'turn:numb.viagenie.ca','credential': 'TESTaccount','username': 'sharon.launchcode@gmail.com'}]};
+var servers = {'iceServers': [{'urls': 'stun:stun.services.mozilla.com'}, {'urls': 'stun:stun.l.google.com:19302'}, {'urls': 'turn:numb.viagenie.ca','credential': 'TESTaccount','username': 'sharon.firebase@gmail.com'}]};
 //var pc = new RTCPeerConnection(servers);//
 var pc = new webkitRTCPeerConnection({'iceServers':[{'urls':'stun:stun.l.google.com:19302'}]});
 
