@@ -1,0 +1,30 @@
+[
+  {
+    "value": "Florida",
+    "synonyms": [
+      "Florida",
+      "florida"
+    ]
+  },
+  {
+    "value": "extended care",
+    "synonyms": [
+      "extended care",
+      "extended Foster Care"
+    ]
+  },
+  {
+    "value": "PESS",
+    "synonyms": [
+      "PESS",
+      "pess"
+    ]
+  },
+  {
+    "value": "Medicaid",
+    "synonyms": [
+      "Medicaid",
+      "medicaid"
+    ]
+  }
+]

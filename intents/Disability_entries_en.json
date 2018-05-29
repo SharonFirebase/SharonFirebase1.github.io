@@ -1,0 +1,45 @@
+[
+  {
+    "value": "on disability",
+    "synonyms": [
+      "on disability",
+      "On Disability"
+    ]
+  },
+  {
+    "value": "email",
+    "synonyms": [
+      "email",
+      "email account",
+      "gmail"
+    ]
+  },
+  {
+    "value": "disability-email",
+    "synonyms": [
+      "disability-email"
+    ]
+  },
+  {
+    "value": "I don\u0027t know",
+    "synonyms": [
+      "I don\u0027t know",
+      "uncertain",
+      "qualify"
+    ]
+  },
+  {
+    "value": "disabled",
+    "synonyms": [
+      "disabled",
+      "Disabled"
+    ]
+  },
+  {
+    "value": "disability",
+    "synonyms": [
+      "disability",
+      "Disability"
+    ]
+  }
+]

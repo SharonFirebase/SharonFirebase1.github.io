@@ -1,0 +1,60 @@
+[
+  {
+    "value": "Foster Care",
+    "synonyms": [
+      "Foster Care",
+      "foster care",
+      "extended foster care",
+      "extensions"
+    ]
+  },
+  {
+    "value": "adopted",
+    "synonyms": [
+      "adopted",
+      "adoption"
+    ]
+  },
+  {
+    "value": "PESS",
+    "synonyms": [
+      "PESS",
+      "pess",
+      "PESS Floirda foster care",
+      "pess program",
+      "PESS program",
+      "Pess care",
+      "PESS care",
+      "PESS foster"
+    ]
+  },
+  {
+    "value": "Medicaid",
+    "synonyms": [
+      "Medicaid",
+      "medicaid"
+    ]
+  },
+  {
+    "value": "Tuition",
+    "synonyms": [
+      "Tuition",
+      "tuition",
+      "tuition assistance"
+    ]
+  },
+  {
+    "value": "guardianship",
+    "synonyms": [
+      "guardianship"
+    ]
+  },
+  {
+    "value": "disability",
+    "synonyms": [
+      "disability",
+      "disabled",
+      "disabilities"
+    ]
+  }
+]
