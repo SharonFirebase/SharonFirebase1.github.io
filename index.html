@@ -62,44 +62,43 @@
                              document.body.appendChild(uploadfile);
                          }
                     </script> 
-                     --->
-                      <!-- version 2 -->
                   <form enctype="multipart/form-data" action="" method="post">
                       <p>Upload file</p>
                       <div id="files">
                           <p><input type="file" name="uploaded_file[]" /></p>
                       </div>
-                  </form>              
-                     
+                  </form> 
+                     --->
+                    <div style="text-align:center">
+                       <h3>Need to upload Documents?</h3>
+                       <h4>We use Slack!</h4>
+                       <h4>Post your document to: #sharon-testing</h4>
+                       <!-- @TODO make this an actual button for accessibility -->
+                       
+                       <form>
+<input class="btn btn-primary btn-lg" type="button" value="Go to SLACK" onclick="window.location.href='https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760'" />
+</form>                                                                 
+                       
+<!-- bot seems a lot slower possibly due to srcset
+ <a href="https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a> -->
+                    </div>
+    
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
-                      <div style="text-align:center;"><!-- header -->
-                           <h4>Please fill out the contact form in case we lose the video connection.</h4> 
-                           <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
-                      </div><!-- header -->
-                      <div><!-- button to initial intake form -->
-                      <button onclick="openInitialIntake()" class="btn btn-primary btn-lg">Initial Intake Form</button>
-                           <script>
-                           function openInitialIntake() {
-                               window.open("https://sharonfirebase.github.io/intake-initial.html");
-                           }
-                           </script>
-                     </div>
-                    <!-- to be revisited 
-                      <div> 
                          <form id="contactForm" autocomplete="off">
-                            
+                            <div style="text-align:center;">
+                            <header><h3>Let's keep in contact!</h3><header>
+                            <h4>Fill out the form below in case we lose the video connection.</h4>
+                            </div>
                             <div class="alert"></div>
                          
                               <label for="name">Your Name:</label><br />  
-                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
-
-                                <div>
-                                 <label for="state">State of Residence:</label><br /> 
-                                 <input id="state" type="text" name="state"><br /> 
-                                </div><br /> 
-                              
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />
+                            
+                              <label for="state">State of Residence:</label><br /> 
+                              <input id="state" type="text" name="state"><br /> 
+                               
                               <label for="dateOfBirth">Date of Birth:</label><br /> 
                               <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
@@ -109,17 +108,15 @@
                               <label for="phone">Contact Phone:</label><br />  
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
-                            <div style="margin-top:25px;">
-                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
+                              <div style="margin-top:25px;">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
                         
                          </form>
-                      </div> --> 
+                      </div>
                          
-   
                  </div><!-- col md 8 for initial intake form -->                       
         </div><!-- container for intake form -->
        </div><!-- row for intake form -->
-     
    <!-- scripting for firebase starts here -->
 
 
