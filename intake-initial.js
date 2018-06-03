@@ -1,4 +1,3 @@
-  // Initialize Firebase
   var config3 = {
     apiKey: "AIzaSyAAieYro-Ne4s5dhJLYdQdAc8c1pEcywiQ",
     authDomain: "initialintakeform-c8d85.firebaseapp.com",
@@ -7,7 +6,7 @@
     storageBucket: "initialintakeform-c8d85.appspot.com",
     messagingSenderId: "783269733167"
   };
-  //firebase.initializeApp(config3);
+  firebase.initializeApp(config3);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
