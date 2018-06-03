@@ -19,6 +19,9 @@ button {
   margin: 5px 0px 0px 10px !important;
   width: 654px;
 }
+.space25 {
+margin-top:25px;
+}
 .go-slack {
 background-color: #dedfe0;
 }
