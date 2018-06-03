@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+   <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
+   <!--[if lt IE 9]>
+  <script>
+    document.createElement("header" );
+    document.createElement("footer" );
+    document.createElement("section"); 
+    document.createElement("aside"  );
+    document.createElement("nav"    );
+    document.createElement("article"); 
+    document.createElement("hgroup" ); 
+    document.createElement("time"   );
+  </script>
+  <noscript>
+     <strong>Warning !</strong>
+     Because your browser does not support HTML5, some elements are created using JavaScript.
+     Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+  </noscript>
+<![endif]-->
+<head>
+  <title>Proof of Concept | Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ </head>
+     
+  <body onload="showMyFace()">
+
+       <div class="row">
+       <div class="container" style="margin-top:50px;">
+            <div class="col-md-4"><!-- contains chat -->
+           <iframe
+              width="350"
+              height="430"
+              src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
+          </iframe>
+            </div><!-- col md 6 -->       
+              <div class="col-md-8">
+                   <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
+                   <video id="yourVideo" autoplay muted playsinline></video>
+                   <video id="friendsVideo" autoplay playsinline></video>
+                   <br />
+                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                   <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
+                   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+                   <script src="js/script.js"></script>
+                </div><!-- col-md  6 -->
+            </div><!-- container -->  
+       </div><!-- row -->
+  
+       <div class="row" style="margin-top:50px;">
+            <div class="container">
+                 <div class="col-md-4"><!-- upload -->                 
+                <!-- version one    
+                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
+                    <script>
+                         function uploadFunction() {
+                             var uploadfile = document.createElement("INPUT");
+                             uploadfile.setAttribute("type", "file");
+                             document.body.appendChild(uploadfile);
+                         }
+                    </script> 
+                  <form enctype="multipart/form-data" action="" method="post">
+                      <p>Upload file</p>
+                      <div id="files">
+                          <p><input type="file" name="uploaded_file[]" /></p>
+                      </div>
+                  </form> 
+                     --->
+                    <div style="text-align:center">
+                       <h3>Need to upload Documents?</h3>
+                       <h4>We use Slack!</h4>
+                       <h4>Go to the general channel: #general</h4>
+                       <!-- @TODO make this an actual button for accessibility -->
+                       
+                       <form>
+                        <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK" onclick="window.location.href='https://slack.com/oauth/authorize?client_id=372929523653.373905951744&scope=channels:history'" />
+                        </form>                                                                 
+
+                    </div>
+    
+                 </div><!-- col md-4 for uploading documents -->
+                 
+                 <div class="col-md-8"><!-- intake form -->
+                         <form id="contactForm" autocomplete="off">
+                            <div style="text-align:center;">
+                            <header><h3>Let's keep in contact!</h3><header>
+                            <h4>Fill out the form below in case we lose the video connection.</h4>
+                            </div>
+                            <div class="alert"></div>
+                         
+                              <label for="name">Your Name:</label><br />  
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />
+                            
+                              <label for="state">State of Residence:</label><br /> 
+                              <input id="state" type="text" name="state"><br /> 
+                               
+                              <label for="dateOfBirth">Date of Birth:</label><br /> 
+                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
+
+                              <label for="email">Email:</label><br />  
+                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+
+                              <label for="phone">Contact Phone:</label><br />  
+                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                              <div style="margin-top:25px;">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
+                        
+                         </form>
+                      </div>
+                         
+                 </div><!-- col md 8 for initial intake form -->                       
+        </div><!-- container for intake form -->
+       </div><!-- row for intake form -->
+   <!-- scripting for firebase starts here -->
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+<script>
+  // Initialize Firebase for Video
+  var config1 = {
+    apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
+    authDomain: "hackathon-video-chat.firebaseapp.com",
+    databaseURL: "https://hackathon-video-chat.firebaseio.com",
+    projectId: "hackathon-video-chat",
+    storageBucket: "hackathon-video-chat.appspot.com",
+    messagingSenderId: "633008113206"
+  };
+  //firebase.initializeApp(config1);
+  // Initialize Firebase Chatbot
+  var config2 = {
+    apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
+    authDomain: "virtualclinicprototype.firebaseapp.com",
+    databaseURL: "https://virtualclinicprototype.firebaseio.com",
+    projectId: "virtualclinicprototype",
+    storageBucket: "virtualclinicprototype.appspot.com",
+    messagingSenderId: "314092904355"
+  };
+  //firebase.initializeApp(config2);
+
+   firebase.initializeApp(config1, config2);
+  //firebase.initializeApp(config3); 
+</script>
+     <script src="intake-initial.js"></script>
+  </body>   
+</html>
+
