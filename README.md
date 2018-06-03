@@ -6,6 +6,14 @@
 
 #### This Virtual Legal Clinic Prototype really arose as a result from working with two teams in the May 2018 Legal Aid Hackathon.  Both of these amazing teams were two of the *many* amazing teams who wanted to use technology to reach those who needed legal assistance.  
 
+#### In short, tasking was to take off-the-shelf technology and create a video-clinic that may reach the many who need legal help, but cannot afford to come to a lawyer's office.  There's many reasons a person needing help cannot access legal help, even though many, many lawyers want to reach out to those in need.   Health and wealth are two major barriers, that we feel, may be overcome with technology.   To that end, the video clinic must be:
+1. Free
+1. Mobile
+1. Use a "mix" of authorization and authentication technologies and protocols.  Some technologies are wide open to ensure quick and easy access, so that even illiterate, ill, injured or isolated clients could talk to someone without a need to sign in, if necessary.  However, for long-term service, and especially for HIPAA and other privacy concerns,  authentication and authorization technologies are employed at different times and different locations.
+1. Off the shelf technology is used.  For example, to upload documents, Slack is used; attendant to that is all the authentication technologies used by Slack.
+
+![Screenshot showing Slack Sign In Page](/images/SignInToSlack.png)
+
 ### Special Thanks to: 
 ### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
 
@@ -49,6 +57,10 @@
 ### About the Source Code:
 #### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
 
+### Art of the Web
+##### JavaScript: Preventing Double Form Submission
+##### https://www.the-art-of-web.com/javascript/doublesubmit/
+
 ### Brad Traversy -- Please support him on Paetron
 ##### https://github.com/bradtraversy/firebasecontact
 
@@ -79,4 +91,3 @@
 #### https://websitebeaver.com
 
 ##### WebRTC code based on the tutorial by David Marcus | https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo#explanation-of-codepen-demo
-
