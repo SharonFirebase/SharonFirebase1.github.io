@@ -12,7 +12,7 @@
 1. Use a "mix" of authorization and authentication technologies and protocols.  Some technologies are wide open to ensure quick and easy access, so that even illiterate, ill, injured or isolated clients could talk to someone without a need to sign in, if necessary.  However, for long-term service, and especially for HIPAA and other privacy concerns,  authentication and authorization technologies are employed at different times and different locations.
 1. Off the shelf technology is used.  For example, to upload documents, Slack is used; attendant to that is all the authentication technologies used by Slack.
 
-![Screenshot showing Slack Sign In Page](/images/SignInToSlack.png)
+
 
 ### Special Thanks to: 
 ### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
@@ -67,7 +67,7 @@
 ### Brian Stewart
 ##### http://bdsworks.org
 
-### Karthik Kamalakannankarthik | Discourse
+### Discourse | Karthik Kamalakannankarthik
 ##### https://discourse.skcript.com/t/how-do-i-create-a-contact-form-using-firebase-as-backend/392
 
 ### MDN
@@ -87,7 +87,12 @@
 ##### JavaScript Date Objects
 ##### https://www.w3schools.com/js/js_dates.asp
 
-### Website Beaver
+### Web Reference | Stephen F. Mai
+
+##### JavaScript's confirm() Method and Forms: WebReference.com
+##### http://webreference.com/programming/javascript/confirm/index-2.html
+
+### Website Beaver | David Marcus
 #### https://websitebeaver.com
 
 ##### WebRTC code based on the tutorial by David Marcus | https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo#explanation-of-codepen-demo
