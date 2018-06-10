@@ -52,7 +52,10 @@
 
 ```In an ideal world, this chatbot could be expanded to cover the entire U.S. and be available to all youth and young adults who have aged out of care.```
 
-
+### About Legal Concepts Used in Organizing Content
+#### Legal Sets | Jeremy N. Sheff
+##### Draft as of June 9, 2018
+##### Concepts in this paper seem extremely valuable in providing clues and guidelines as to how to organize information for automated chat/natural language systems such as Dialogflow
 
 ### About the Source Code:
 #### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
