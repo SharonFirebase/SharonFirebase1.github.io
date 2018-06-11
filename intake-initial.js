@@ -44,7 +44,6 @@ function getInputVal(id){
   // Clear form
   document.getElementById('contactForm').reset();
 }
-
   
 // Save message to firebase
 function saveMessage(name, dateOfBirth, email, phone, state){
