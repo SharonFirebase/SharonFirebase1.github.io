@@ -163,7 +163,6 @@ limitations under the License.
      *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
      *    out, and that is where we update the UI.
      */
-    
     function initApp() {
       // Listening for auth state changes.
       // [START authstatelistener]
@@ -203,10 +202,9 @@ limitations under the License.
       // [END authstatelistener]
 
       document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
-      //document.getElementById('
-      //').addEventListener('click', handleSignUp, false);
-      //document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
-      //document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+      document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
+      document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
+      document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
     }
 
     window.onload = function() {
@@ -222,7 +220,7 @@ limitations under the License.
   <!-- <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700 video-header"> -->
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
-        <a href="/"><h3>Proof of Concept Video Clinic Initial Intake Form With Firebase Authentication V1</h3></a>
+        <a href="/"><h3>Proof of Concept Video Clinic With Firebase Authentication V1</h3></a>
       </div>
     </div>
   </header>
@@ -236,22 +234,20 @@ limitations under the License.
           <h2 class="mdl-card__title-text">Initial Intake Form Based On Firebase Email &amp; Password Authentication</h2>
         </div>
         <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <!-- <p>Enter an email and password below and either sign in to an existing account or sign up</p>  -->
-          <p>Enter an email and password below to sign in</p>
+          <p>Enter an email and password below and either sign in to an existing account or sign up</p>
+
           <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
           &nbsp;&nbsp;&nbsp;
           <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
           <br/><br/>
           <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
           &nbsp;&nbsp;&nbsp;
-          
-          <!-- <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
           &nbsp;&nbsp;&nbsp;
           <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-          &nbsp;&nbsp;&nbsp; -->
+          &nbsp;&nbsp;&nbsp;
           <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
-          
-          <div id="showauth">UNDER CONSTRUCTION</div>
+
           <!-- Container where we'll display the user details -->
          
           <div class="quickstart-user-details-container" style="display:none;">
