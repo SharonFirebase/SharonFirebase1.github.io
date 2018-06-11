@@ -52,7 +52,6 @@ limitations under the License.
     function toggleSignIn() {
       if (firebase.auth().currentUser) {
         // [START signout]
-        document.getElementById('showauth').color = "yellow";
         firebase.auth().signOut();
         // [END signout]
       } else {
@@ -251,7 +250,7 @@ limitations under the License.
           &nbsp;&nbsp;&nbsp;
           <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
            -->
-          <div id="showauth" style="background-color:red;">TEST IN PROGRESS</div>
+          <div id="showauth">UNDER CONSTRUCTION</div>
           <!-- Container where we'll display the user details -->
          
           <div class="quickstart-user-details-container" style="display:none;">
