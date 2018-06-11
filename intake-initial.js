@@ -21,7 +21,7 @@ function submitForm(e){
   // Get values
   var name = getInputVal('name');
   var dateOfBirth = getInputVal('dateOfBirth');
-  var email = getInputVal('email');
+  var email1 = getInputVal('email1');
   var phone = getInputVal('phone');
   var state = getInputVal('state');
 
@@ -54,7 +54,7 @@ function saveMessage(name, dateOfBirth, email, phone, state){
     name: name,
     state:state,
     dateOfBirth:dateOfBirth,
-    email:email,
+    email1:email1,
     phone:phone
     
   }); 
