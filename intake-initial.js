@@ -1,12 +1,12 @@
-  var config2 = {
-    apiKey: "AIzaSyAAieYro-Ne4s5dhJLYdQdAc8c1pEcywiQ",
-    authDomain: "initialintakeform-c8d85.firebaseapp.com",
-    databaseURL: "https://initialintakeform-c8d85.firebaseio.com",
-    projectId: "initialintakeform-c8d85",
-    storageBucket: "initialintakeform-c8d85.appspot.com",
-    messagingSenderId: "783269733167"
-  };
-  firebase.initializeApp(config2);
+  //var config2 = {
+    //apiKey: "AIzaSyAAieYro-Ne4s5dhJLYdQdAc8c1pEcywiQ",
+    //authDomain: "initialintakeform-c8d85.firebaseapp.com",
+    //databaseURL: "https://initialintakeform-c8d85.firebaseio.com",
+    //projectId: "initialintakeform-c8d85",
+    //storageBucket: "initialintakeform-c8d85.appspot.com",
+    //messagingSenderId: "783269733167"
+  //};
+  //firebase.initializeApp(config2);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
