@@ -9,7 +9,7 @@
 
 ##### SDP is designed to be extensible to support new media types and formats. SDP started off as a component of the Session Announcement Protocol (SAP),[citation needed] but found other uses in conjunction with Real-time Transport Protocol (RTP), Real-time Streaming Protocol (RTSP), Session Initiation Protocol (SIP) and even as a standalone format for describing multicast sessions.
 
-Session description
+##### Session description
     v=  (protocol version number, currently only 0)
     o=  (originator and session identifier : username, id, version number, network address)
     s=  (session name : mandatory with at least one UTF-8-encoded character)
@@ -24,10 +24,10 @@ Session description
     k=* (encryption key)
     a=* (zero or more session attribute lines)
     Zero or more Media descriptions (each one starting by an "m=" line; see below)
-Time description (mandatory)
+##### Time description (mandatory)
     t=  (time the session is active)
     r=* (zero or more repeat times)
-Media description (if present)
+##### Media description (if present)
     m=  (media name and transport address)
     i=* (media title or information field)
     c=* (connection information — optional if included at session level)
