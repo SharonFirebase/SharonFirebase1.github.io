@@ -1,5 +1,6 @@
 video {
-  background-color: #ddd;
+  background-color: transparent;
+  /* background-color: #ddd;*/
   border-radius: 7px;
   margin: 10px 0px 0px 10px;
   width: 320px;
