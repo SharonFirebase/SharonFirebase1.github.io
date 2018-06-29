@@ -1,3 +1,13 @@
+
+html { 
+  background: url(images/TennesseeMountains.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 video {
   background-color: #ddd;
   border-radius: 7px;
